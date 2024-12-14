@@ -5,11 +5,11 @@ import { TextTransformer } from './textTransformer';
 export function activate(context: vscode.ExtensionContext) {
     // 跳转到扩展配置
     const openSettings = () => {
-        vscode.commands.executeCommand('workbench.action.openSettings', 'xtranslate');
+        vscode.commands.executeCommand('workbench.action.openSettings', 'x-translate');
     };
 
     // 翻译命令
-    let translateCommand = vscode.commands.registerCommand('xtranslate.translate', async () => {
+    let translateCommand = vscode.commands.registerCommand('x-translate.translate', async () => {
         const editor = vscode.window.activeTextEditor;
         let text = '';
         let isInputMode = false;

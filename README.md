@@ -31,7 +31,7 @@
 
 1. 自定义镜像地址：
    ```json
-   "xtranslate.googleMirrorCustom": "https://translate.google.com"
+   "x-translate.googleMirrorCustom": "https://translate.google.com"
    ```
    当镜像选择为 `custom` 时使用此地址
 
@@ -49,10 +49,6 @@
 - 支持中英文互译
 - 支持选中文本和直接输入两种模式
 - 支持 Google 翻译
-
-## 问题反馈
-
-如果您遇到任��问题或有功能建议，欢迎在 [VS Code Marketplace](https://marketplace.visualstudio.com/items/yuunie.xtranslate/reviews) 中提出。
 
 ## 致谢
 

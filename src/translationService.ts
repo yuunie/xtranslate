@@ -7,7 +7,7 @@ export interface TranslationService {
 
 export class GoogleTranslator implements TranslationService {
     private getMirrorUrl(): string {
-        const config = vscode.workspace.getConfiguration('xtranslate');
+        const config = vscode.workspace.getConfiguration('x-translate');
         const preset = config.get<string>('googleMirrorPreset');
         
         // 使用预设地址

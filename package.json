@@ -26,7 +26,7 @@
     "命名转换",
     "格式转换"
   ],
-  "icon": "images/Designer.png",
+  "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#C80000",
     "theme": "dark"
@@ -38,28 +38,28 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:xtranslate.translate"
+    "onCommand:x-translate.translate"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "xtranslate.translate",
+        "command": "x-translate.translate",
         "title": "Translate Selected Text"
       }
     ],
     "keybindings": [
       {
-        "command": "xtranslate.translate",
+        "command": "x-translate.translate",
         "key": "ctrl+shift+x",
         "mac": "cmd+shift+x",
         "when": "editorTextFocus"
       }
     ],
     "configuration": {
-      "title": "Xtranslate",
+      "title": "X-Translate",
       "properties": {
-        "xtranslate.service": {
+        "x-translate.service": {
           "type": "string",
           "default": "google",
           "enum": [
@@ -67,7 +67,7 @@
           ],
           "description": "选择翻译服务"
         },
-        "xtranslate.googleMirrorPreset": {
+        "x-translate.googleMirrorPreset": {
           "type": "string",
           "default": "custom",
           "enum": [
@@ -94,10 +94,10 @@
           ],
           "description": "选择 Google 翻译镜像地址"
         },
-        "xtranslate.googleMirrorCustom": {
+        "x-translate.googleMirrorCustom": {
           "type": "string",
           "default": "https://translate.google.com",
-          "description": "自定义镜���地址（当选择 custom 时生效）"
+          "description": "自定义镜像地址（当选择 custom 时生效）"
         }
       }
     }
