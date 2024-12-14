@@ -1,6 +1,6 @@
 {
-  "name": "xtranslate",
-  "displayName": "Xtranslate",
+  "name": "x-translate",
+  "displayName": "X-Translate Pro",
   "description": "A smart translator extension with multiple translation services and text case conversion",
   "version": "0.0.1",
   "publisher": "yuunie",
@@ -97,7 +97,7 @@
         "xtranslate.googleMirrorCustom": {
           "type": "string",
           "default": "https://translate.google.com",
-          "description": "自定义镜像地址（当选择 custom 时生效）"
+          "description": "自定义镜���地址（当选择 custom 时生效）"
         }
       }
     }

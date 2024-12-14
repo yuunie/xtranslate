@@ -1,4 +1,4 @@
-# Xtranslate
+# X-Translate Pro
 
 一个智能的 VS Code 翻译插件，支持中英文互译，并提供多种文本格式转换功能。
 
@@ -52,7 +52,7 @@
 
 ## 问题反馈
 
-如果您遇到任何问题或有功能建议，欢迎在 [VS Code Marketplace](https://marketplace.visualstudio.com/items/yuunie.xtranslate/reviews) 中提出。
+如果您遇到任��问题或有功能建议，欢迎在 [VS Code Marketplace](https://marketplace.visualstudio.com/items/yuunie.xtranslate/reviews) 中提出。
 
 ## 致谢
 
