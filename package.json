@@ -8,6 +8,10 @@
     "name": "yuunie",
     "email": "yujunjie1998@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuunie/xtranslate.git"
+  },
   "keywords": [
     "translate",
     "translator",
