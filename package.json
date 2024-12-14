@@ -1,0 +1,123 @@
+{
+  "name": "xtranslate",
+  "displayName": "Xtranslate",
+  "description": "A smart translator extension with multiple translation services and text case conversion",
+  "version": "0.0.1",
+  "publisher": "yuunie",
+  "author": {
+    "name": "yuunie",
+    "email": "yujunjie1998@gmail.com"
+  },
+  "keywords": [
+    "translate",
+    "translator",
+    "google translate",
+    "chinese",
+    "english",
+    "translation",
+    "翻译",
+    "X翻译",
+    "变量名",
+    "中英互译",
+    "命名转换",
+    "格式转换"
+  ],
+  "icon": "images/Designer.png",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:xtranslate.translate"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "xtranslate.translate",
+        "title": "Translate Selected Text"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "xtranslate.translate",
+        "key": "ctrl+shift+x",
+        "mac": "cmd+shift+x",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Xtranslate",
+      "properties": {
+        "xtranslate.service": {
+          "type": "string",
+          "default": "google",
+          "enum": [
+            "google"
+          ],
+          "description": "选择翻译服务"
+        },
+        "xtranslate.googleMirrorPreset": {
+          "type": "string",
+          "default": "custom",
+          "enum": [
+            "custom",
+            "tantu",
+            "iass",
+            "renwole",
+            "996vin",
+            "yifan",
+            "willbon",
+            "lvshitou",
+            "bomea"
+          ],
+          "enumDescriptions": [
+            "使用自定义镜像地址",
+            "google-translate-proxy.tantu.com",
+            "tr.iass.top",
+            "translate.renwole.com",
+            "ts.996.vin",
+            "gt1.yifan.ai",
+            "translate.willbon.top",
+            "www.lvshitou.com",
+            "a.bomea.com"
+          ],
+          "description": "选择 Google 翻译镜像地址"
+        },
+        "xtranslate.googleMirrorCustom": {
+          "type": "string",
+          "default": "https://translate.google.com",
+          "description": "自定义镜像地址（当选择 custom 时生效）"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.x.x",
+    "@types/vscode": "^1.60.0",
+    "@types/node-fetch": "^2.6.4",
+    "typescript": "^4.x.x",
+    "@types/glob": "^7.1.3",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.12"
+  },
+  "license": "MIT"
+}
